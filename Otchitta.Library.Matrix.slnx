@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/source.code/">
+    <Project Path="source.code/Otchitta.Library.Matrix.Code.csproj" />
+  </Folder>
+  <Folder Name="/source.test/">
+    <Project Path="source.test/Otchitta.Library.Matrix.Test.csproj" />
+  </Folder>
+</Solution>
