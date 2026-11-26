@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <!--#endregion 基本設定 -->
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Otchitta.Library.Matrix.Test" />
+  </ItemGroup>
 </Project>
