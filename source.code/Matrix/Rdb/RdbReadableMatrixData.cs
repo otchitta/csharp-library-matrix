@@ -50,13 +50,16 @@ public sealed class RdbReadableMatrixData : ReadableMatrixData {
 	}
 	#endregion 生成メソッド定義
 
-
-
-
+	/// <summary>
+	/// RDB利用読込格子基本情報を生成します。
+	/// </summary>
+	/// <param name="source">実行処理</param>
+	/// <returns>RDB利用読込格子基本情報</returns>
+	/// <exception cref="Common.Service.Rdb.RdbServiceException">実行処理に失敗した場合</exception>
 	public static async Task<RdbReadableMatrixData> CreateData(System.Data.Common.DbCommand source) {
 		try {
 			using var reader = await Common.Service.Rdb.RdbServiceExtension.InvokeList(source);
-			return await CreateData(source);
+			return await CreateData(reader);
 		} catch (Common.Service.Rdb.RdbServiceException) {
 			throw;
 		} catch (Exception errors) {
