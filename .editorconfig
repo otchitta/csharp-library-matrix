@@ -1,0 +1,18 @@
+# ====================================================================
+# テキストエディタ設定
+# ====================================================================
+# 基底設定
+root = true
+
+# 基本設定
+[*]
+indent_style = space
+indent_size  = 2
+charset      = utf-8
+trim_trailing_whitespace = true
+insert_final_newline     = true
+
+# 言語設定
+[*.cs]
+indent_style = tab
+indent_size  = 4
